@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Written by Bong McPuffin
+# Tested last on Jan 2nd, 2019
+
 if [[ "$(cat /tmp/.conkystate)" = "above" ]]; then
     STATE="below"
     REMOVE="above"
