@@ -9,6 +9,8 @@ THIS SCRIPT ASSUMES CONKY IS ALREADY RUNNING! MAKE SURE CONKY HAS BEEN STARTED!
 
 Download into ~/.conky/Toggle or some place sensible (doesn't really matter where).
 
+IMPORTANT: Edit the /home/CHANGEUSER/.conky/GameMonitor/conkyrc line to reflect your user name or this script won't work! If you install your conky themes somewhere else then you will need to include the full path to that directory.
+
 Add to Keyboard Shortcuts by going to Preferences -> Keyboard -> Shortcuts -> Add custom shortcut.
 
 Name it "Conky A/B Toggle" or something similar -> Click the button next to the Command field and navigate to where ever you unzipped this file this file.
