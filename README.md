@@ -19,6 +19,8 @@ Next click on Custom Shortcuts in the left side window and click Conky A/B Toggl
 
 Congrats, you can now toggle Conky to be above all other windows or push it to the background at will without having to open a text editor!
 
-Recommended: Pair this script up with the custom conkyrc file provided. Place the conkyrc into ~/.conky/GamingMonitor and run with ConkyMananger2.
+Highly recommended for those with nVidia cards: Open nvidia-settings and click X Server Display Configuration and at the bottom click Save to Xorg Configuration File and then "sudo nano /etc/X11/xorg.conf" and add "coolbits=4" at the end of the [DEVICE] section. This enables fan control on the GPU. Then download and extract the gpufan.sh script somewhere such as /home/GPUFan. Next go to Preferences -> Startup Applications -> at the bottom click the + button and then custom command, give this a name like GPU Fan Controller and then browse to where you placed the gpufan.sh script and select it. Reboot to have a dynamically controlled fan. (Make back ups of everything and closely monitor your temperatures in case you have to revert back)
+
+Optional (but recommended): Pair this script up with the custom conkyrc file provided. Place the conkyrc into ~/.conky/GamingMonitor and run with ConkyMananger2. This conkyrc displays the time, CPU temp, and GPU temp.
 
 Instructions for installing ConkyManager2 here (works with Ubuntu 18.04/Linux Mint 19.*)  -> https://github.com/zcot/conky-manager2/blob/add-1.10-support/HOWTOBUILD.md
