@@ -1,7 +1,7 @@
 # Conky-Toggle
 
-~Written by Bong McPuffin~
-~Last tested on January 2nd, 2019.~
+*Written by Bong McPuffin*
+*Last tested on January 2nd, 2019.*
 
 This script toggles Conky's above/below line (makes it always stay on top of other windows or pushes it to background).
 
