@@ -3,11 +3,11 @@
 if [[ "$(cat /tmp/.conkystate)" = "above" ]]; then
     STATE="below"
     REMOVE="above"
-    sed -i 's/above/below/g' /home/branden/.conky/Simple-Bar-Conky/conkyrc
+    sed -i 's/above/below/g' /home/CHANGEUSER/.conky/GameMonitor/conkyrc
 else
     STATE="above"
     REMOVE="below"
-    sed -i 's/below/above/g' /home/branden/.conky/Simple-Bar-Conky/conkyrc
+    sed -i 's/below/above/g' /home/CHANGEUSER/.conky/GameMonitor/conkyrc
 fi
     echo $STATE > /tmp/.conkystate
 
