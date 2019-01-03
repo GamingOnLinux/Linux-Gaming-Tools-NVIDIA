@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ "$(cat /tmp/.conkystate)" = "above" ]]; then
+    STATE="below"
+    REMOVE="above"
+    sed -i 's/above/below/g' /home/branden/.conky/Simple-Bar-Conky/conkyrc
+else
+    STATE="above"
+    REMOVE="below"
+    sed -i 's/below/above/g' /home/branden/.conky/Simple-Bar-Conky/conkyrc
+fi
+    echo $STATE > /tmp/.conkystate
+
+for t in Todo-Conky QuodLibet-Conky QuodLibet-Conky-Cover; do
+    wmctrl -F -r $t -b remove,$REMOVE
+    wmctrl -F -r $t -b add,$STATE
+done
